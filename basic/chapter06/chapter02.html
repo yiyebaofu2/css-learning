@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素的宽度和高度</title>
+    <style>
+        /*
+          最终元素的总宽度计算公式是这样的：
+          总元素的宽度=宽度+左填充+右填充+左边框+右边框+左边距+右边距
+          元素的总高度最终计算公式是这样的： 总元素的高度=高度+顶部填充+底部填充+上边框+下边框+上边距+下边距
+         */
+        .ex {
+            width: 220px;
+            padding: 10px;
+            border: 5px solid green;
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="250x250px.gif" />
+    <div class="ex">
+        上面的图片是250 px宽。
+        这个元素的总宽度也是250 px。
+    </div>
+</body>
+</html>

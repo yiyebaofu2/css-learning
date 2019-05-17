@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框颜色</title>
+
+    <style>
+      /*
+        border-style属性可以有1-4个值：
+        border-style:dotted solid double dashed;
+        上边框是 dotted
+        右边框是 solid
+        底边框是 double
+        左边框是 dashed
+
+        border-style:dotted solid double;
+        上边框是 dotted
+        左、右边框是 solid
+        底边框是 double
+
+        border-style:dotted solid;
+        上、底边框是 dotted
+        右、左边框是 solid
+
+        border-style:dotted;
+        四面边框是 dotted
+     */
+        p.one {
+            border-style: solid;
+            border-color: red;
+        }
+
+        p.two {
+            border-style: solid;
+            border-color: #98bf21;
+        }
+
+        p.three {
+            border-style: solid;
+            border-width: 1px;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="one">实线红色边框</p>
+    <p class="two">实线绿色边框</p>
+    <p class="three">1px红色边框</p>
+    <p><b>注意:</b> "border-color" 属性 如果单独使用则不起作用. 要先使用 "border-style" 属性来设置边框。</p>
+</body>
+</html>
