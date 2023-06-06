@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style type="text/css">
+         /**
+            link: 未访问过的链接
+          */
+         a:link {
+             color: red;
+         }
+
+         /**
+          visited: 访问过的链接
+          */
+        a:visited {
+            color: darkviolet;
+        }
+
+        /**
+          hover: 鼠标移入的状态
+         */
+        a:hover {
+            color: skyblue;
+        }
+
+        /**
+          active: 超链接被点击时候的状态
+         */
+        a:active {
+            color: yellow;
+        }
+
+        /**
+        获取焦点
+         */
+        input:focus {
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="http://www.baidu.com">百度</a>
+    <br/><br/><br/>
+    <a href="http://www.baidu.com">这是一个百度链接</a>
+    <br/><br/><br/>
+    <input type="text" />
+</body>
+</html>

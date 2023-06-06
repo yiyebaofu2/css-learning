@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航条</title>
+    <style type="text/css">
+        /*清除默认样式*/
+        * {
+            margin:0;
+            padding: 0;
+        }
+
+        /*设置ul*/
+        .nav {
+            /*去除项目符号*/
+            list-style: none;
+            background-color: blue;
+            width: 1000px;
+            /*设置居中*/
+            margin: 50px auto;
+            /*解决高度坍塌*/
+            overflow: hidden;
+        }
+
+        /*设置li*/
+        .nav li {
+            /*设置li向左浮动*/
+            float: left;
+            width: 12.5%;
+        }
+
+        .nav a {
+            /*设置成块元素*/
+            display: block;
+            width: 100%;
+            /*设置文字居中*/
+            text-align: center;
+            padding: 5px 0;
+            /*去除下划线*/
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--创建导航条的结构-->
+    <ul class="nav">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">新闻</a></li>
+        <li><a href="#">联系</a></li>
+        <li><a href="#">关于</a></li>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">新闻</a></li>
+        <li><a href="#">联系</a></li>
+        <li><a href="#">关于</a></li>
+    </ul>
+    <div style="background-color: red;width: 100px;height: 100px"></div>
+</body>
+</html>

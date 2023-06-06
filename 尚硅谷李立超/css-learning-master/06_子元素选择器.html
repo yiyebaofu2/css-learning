@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>子元素选择器</title>
+    <style type="text/css">
+        /*
+           为所有子元素第一个p标签设置背景颜色
+         */
+        p:first-child {
+            background-color: red;
+        }
+
+        p:last-child {
+            background-color: blue;
+        }
+
+        /**
+          nth-child 可以选中任意位置的元素
+                    该选择器后面可以指定一个参数，指定要选中第几个子元素
+                    even表示偶数位置的子元素
+         */
+        p:nth-child(3) {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p>我是body里面的第一个P标签</p>
+    <p>我是第二个P标签</p>
+    <p>我是第三个P标签</p>
+    <p>我是第四个标签</p>
+    <p>我是第五个P标签</p>
+    <p>我是第六个P标签</p>
+    <p>我是第七个P标签</p>
+    <div>
+        <p>我是div里面的第一个p标签</p>
+        <div><p>asdfadsf</p></div>
+        <div><p>asdfadsf</p></div>
+    </div>
+    <div>
+        <p>aaaaaaa</p>
+        <p>asdfadsf</p>
+    </div>
+    <div>
+        <p>asdfadsf</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html元素的分类</title>
+</head>
+<body>
+ <!--
+     块级元素的表现
+     1: 总是在新行上建立, 并且后面的元素也另起一行
+     2: 宽度(width)默认为父元素(容器)的100%, 可定义
+     3: 高度(height)默认为0, 未定义时, 高度可由内部元素的高度撑开
+     4: 可定义上下左右的内边距(padding), 并且会影响周围元素的布局
+     5: 可定义上下左右的外边距(margin), 并且会影响周围元素布局
+ -->
+
+<!--
+     内联元素的表现
+     1: 和其他内联元素会在同一行显示
+     2: 宽度由包裹的文字或者图片的宽度决定,但是不会超过父容器(一般情况下)
+     3: 高度由行高(line-height)决定
+     4: 只有左右内边距(padding)会影响布局, 上下内边距会改变元素的范围, 但是不会影响其他元素的布局
+     5: 只有左右边距(margin)会影响布局, 上下外边距既不会改变元素范围也不会影响周围元素的布局
+-->
+
+<div style="background-color: yellow;width: 300px">
+    <span style="background-color: red;padding-top: 5px">
+        222 aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa 111
+    </span>
+    <span style="background-color: blue;">
+        aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa
+    </span>
+</div>
+</body>
+</html>

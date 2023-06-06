@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本样式</title>
+    <style type="text/css">
+        .p1 {
+            /*
+              text-transform可以用来设置文本的大小写
+              可选值:
+                  none 默认值 该怎么显示就怎么显示, 不做任何处理
+                  capitalize 单词的首字母大写，通过空格来识别单词
+                  uppercase 所有的字母都大写
+                  lowercase 所有的字母都小写
+            */
+            text-transform: lowercase;
+        }
+
+        .p2 {
+            /*
+              text-decoration可以用来设置文本的修饰
+                     可选值:
+                          none:     默认值,不添加任何修饰,正常显示
+                          underline 为文本添加下划线
+                          overline  为文本添加上划线
+                          line-through 为文本添加删除线
+            */
+            text-decoration: underline;
+        }
+
+        a {
+            /*
+               超链接会默认添加下划线,也就是超链接的text-decoration的默认值underline,
+               如果需要去除超链接的下划线则需要
+            */
+            text-decoration: none;
+        }
+
+        .p3 {
+            /*
+            letter-spacing可以指定字符间距
+            */
+            /*letter-spacing: 10px;*/
+
+            /*
+              word-spacing可以设置单词之间的距离,实际上就是设置词与词之间的空格大小
+            */
+            word-spacing: 120px;
+        }
+
+        .p4 {
+            /*
+               text-align 用于设置文本的对齐方式
+               可选值:
+                    left 默认值，文本靠左对齐
+                    right 文本右对齐
+                    center 文本居中对齐
+                    justify 两端对齐。通过调整文本之间的空格大小，来达到一个两端对齐的目的
+            */
+            text-align: right;
+        }
+
+        .p5 {
+            font-size: 20px;
+            /*
+               text-indent用来设置首行缩进
+                 当给它指定一个正值时,会自动向右侧缩进指定的像素
+                 如果为它指定一个负值,则会向左移动指定的像素。
+                      通过这种方式可以将一些不想显示的文字隐藏起来
+            */
+            text-indent: -9999px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">我是一个超链接</a>
+
+    <p class="p1">
+        “ A Hooray! It's snowing! It's time to make a snowman.James runs out. He makes a big pile of snow. He puts a big snowball on top. He adds a scarf and a hat. He adds an orange for the nose. He adds coal for the eyes and buttons.In the evening, James opens the door. What does he see? The snowman is moving! James invites him in. The snowman has never been inside a house. He says hello to the cat. He plays with paper towels.A moment later, the snowman takes James's hand and goes out.They go up, up, up into the air! They are flying! What a wonderful night!The next morning, James jumps out of bed. He runs to the door.He wants to thank the snowman. But he's gone.”
+    </p>
+
+    <p class="p2">
+        “ A Hooray! It's snowing! It's time to make a snowman.James runs out. He makes a big pile of snow. He puts a big snowball on top. He adds a scarf and a hat. He adds an orange for the nose. He adds coal for the eyes and buttons.In the evening, James opens the door. What does he see? The snowman is moving! James invites him in. The snowman has never been inside a house. He says hello to the cat. He plays with paper towels.A moment later, the snowman takes James's hand and goes out.They go up, up, up into the air! They are flying! What a wonderful night!The next morning, James jumps out of bed. He runs to the door.He wants to thank the snowman. But he's gone.”
+    </p>
+
+    <p class="p3">
+        “ 的纯电动快点快点打开的快点快点看代码是是是A Hooray! It's snowing! It's time to make a snowman.James runs out. He makes a big pile of snow. He puts a big snowball on top. He adds a scarf and a hat. He adds an orange for the nose. He adds coal for the eyes and buttons.In the evening, James opens the door. What does he see? The snowman is moving! James invites him in. The snowman has never been inside a house. He says hello to the cat. He plays with paper towels.A moment later, the snowman takes James's hand and goes out.They go up, up, up into the air! They are flying! What a wonderful night!The next morning, James jumps out of bed. He runs to the door.He wants to thank the snowman. But he's gone.”
+    </p>
+
+
+    <p4 class="p4">
+       按时发生都较为偶然默默地加密狗万阿尔及个人户贵州省发布时代峻峰八婆拍照片v红十字爱爱囧事都风控储蓄卡v及哦啊无内放哪水电费内存空间设置的VC啊是
+    </p4>
+    <h1 class="p4">文本位置</h1>
+
+
+    <p class="p5">
+        设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进
+        设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进
+        设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进设置首行缩进
+    </p>
+</body>
+</html>

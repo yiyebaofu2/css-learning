@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>否定伪类</title>
+    <style type="text/css">
+        /**
+          否定伪类:
+              作用:可以从已经选中的元素中剔除某些元素
+              语法: :not(选择器)
+         */
+        p:not(.hello) {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>这是一个p标签</p>
+    <p>这是一个p标签</p>
+    <p class="hello">剔除我</p>
+    <p id="p1">这是一个p标签</p>
+    <p>这是一个p标签</p>
+    <p>这是一个p标签</p>
+</body>
+</html>

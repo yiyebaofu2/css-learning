@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a标签顺序</title>
+    <style type="text/css">
+        /*
+        顺序: lvha
+
+            原因：浏览器的就近原则，举个例子：
+            如果定义的顺序是a:visited、a:hover、a:link，这时候就会发现，不管我有没有hover上去，
+            样式都是link的样式的，这是因为鼠标经过的未访问链接同时拥有a:link、a:hover两种属性，
+            在第一种情况下，a:link离它最近，所以它优先满足a:link，而放弃a:hover的重复定义。
+            所以，如果一个链接没有被访问过，那么它有可能同时拥有 link , hover 两个属性，不能让 link 写在后面，
+            否则不管 hover 是否，都会显示link的样式；同样的道理，如果一个链接已经被访问过了，
+            那么它有可能同时拥有visited , hover 两个属性，hover 要在 visited 的后面；
+            所以，我们总结出，要想让一个链接各个阶段都正常呈现样式，正确的顺序是 lvha ;
+        */
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: skyblue;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <a>链接1</a><br/><br/>
+    <a>链接2</a><br/><br/>
+    <a>链接3</a><br/><br/>
+    <a>链接4</a><br/><br/>
+    <a>链接5</a><br/><br/>
+</body>
+</html>
